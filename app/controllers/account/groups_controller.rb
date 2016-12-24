@@ -1,6 +1,7 @@
-class Account::PostsController < ApplicationController
+class Account::GroupsController < ApplicationController
   before_action :authenticate_user!
+
   def index
-    @posts = current_user.posts
+    @groups = current_user.participated_groups
   end
 end

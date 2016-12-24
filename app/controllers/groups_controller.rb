@@ -48,4 +48,3 @@ def find_group_and_check_permission
 def group_params
   params.require(:group).permit(:title, :description)
  end
-end
